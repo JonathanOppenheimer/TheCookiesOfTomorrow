@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v10/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+header {
+    width: 100vw;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 2px 2px 10px rgba(13, 13, 13, 0.6);
+}
+h1 {
+    font-family: 'Raleway';
+    font-weight: 200;
+    font-size: 3em;
+}
+.grid {
+    width: 80vw;
+    margin: 0 auto 0 auto;
+    margin-top: 10vh;
+}
+.grid div {
+    max-width: 20vw;
+    max-height: 20vh;
+    min-width: 20vw;
+    min-height: 20vh;
+    float: left;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.grid div:hover {
+    cursor: pointer;
+}
+.grid div p {
+    color: white;
+    -webkit-transition: 0.2 all;
+    transition: 0.2 all;
+    position: fixed;
+    z-index: 10000;
+}
+.grid div:hover p {
+    color: #212121;
+}
+.grid div img {
+    -webkit-filter: brightness(40%);
+    -webkit-filter: brightness(40%);
+    filter: brightness(40%);
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    height: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+.grid div:hover img {
+    -webkit-filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+}
